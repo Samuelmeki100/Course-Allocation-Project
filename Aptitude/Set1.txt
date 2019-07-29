@@ -1,0 +1,137 @@
+﻿<script>
+function showloder(){
+	document.getElementById("Questions").style.display = "none";
+	document.getElementById("loader").style.display = "table";
+	
+}
+</script>
+<div id="Questions" onload="showloder()">
+<ol>
+
+<LI><label>	If you didn’t have to sleep,would you ?</label>
+
+<div class="radio">
+<label><input type="radio" name="1" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="1" value="No">No</label>
+</div>
+
+</LI>
+
+<LI><label>	If you could turn any activity into an Olympic sport, what would you have a good chance at winning medal for?</label>
+<div class="radio">
+<label><input type="radio" name="2" value="Yes">Yes?</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="2" value="No">No</label>
+</div>
+</LI>
+
+<LI>
+<label>	When people come to you for help, what do they usually want help with?</label>
+
+<div class="radio">
+<label><input type="radio" name="3" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="3" value="No">No</label>
+</div>
+
+
+</LI>
+<LI>
+<label>	What takes up too much of your time?</label>
+
+<div class="radio">
+<label><input type="radio" name="4" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="4" value="No">No</label>
+</div>
+
+</LI>
+
+<LI>
+<label>	What’s your favourite genre of book or movie?</label>
+
+<div class="radio">
+<label><input type="radio" name="5" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="5" value="No">No</label>
+</div>
+</LI>
+
+<LI>
+<label>	If all jobs had the same pay and hours, what job would you like to have?</label>
+
+<div class="radio">
+<label><input type="radio" name="6" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="6" value="No">No</label>
+</div>
+
+</LI>
+
+<LI>
+<label>	If you suddenly became a master at woodworking, what would you make?</label>
+<div class="radio">
+<label><input type="radio" name="7" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="7" value="No">No</label>
+</div>
+</LI>
+
+<LI>
+<label>	If you were given a chance to change the world how would you do it?</label>
+
+<div class="radio">
+<label><input type="radio" name="8" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="8" value="No">No</label>
+</div>
+
+</LI>
+
+<LI><label>	How many people would you prefer to live with every day?</label>
+
+<div class="radio">
+<label><input type="radio" name="9" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="9" value="No">No</label>
+</div>
+
+</LI>
+
+<LI>
+<label>	Have you ever given to any charities?</label>
+
+<div class="radio">
+<label><input type="radio" name="10" value="Yes">Yes</label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="10" value="No">No</label>
+</div>
+</LI>
+<button onclick="showloder()" id="next" style="margin-top: 30px;" class="btn btn-primary btn-md">Next</button>
+</ol>
+</div>
+
+
+
+<div  id="popup"> <div style="display:none;  margin-left: 416px; margin-top: 92px;" id="loader" class="loader"> </div> </div>

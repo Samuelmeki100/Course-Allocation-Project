@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+<style>
+
+li:hover{
+	 cursor:pointer;
+	 background-color:#6090e6;
+	 color:white;
+}
+
+
+</style>
+<script>
+
+
+var Subjects;
+var	text = "";
+var fLen ;
+
+$.get("getsubjects.php", function(data, status){
+		 Subjects=data.toString()
+    
+	  Subjects = Subjects.split(",");
+	  Subjects.pop();
+		fLen = Subjects.length;
+		
+		
+		getsub();
+					function getsub(){
+				
+							for (i = 0; i < fLen; i++) {
+							
+							text += "<li  onclick='onselect( "+ i +" )'>" + Subjects[i] + "</li>";
+
+						} 
+						text += "";
+
+						document.getElementById("sel1").innerHTML = text;
+
+
+			}
+
+    });
+
+</script>
+</head>
+<body>
+
+<div class="form-group">
+  <label for="sel1">Select list:</label>
+  <ol style="padding-left: 49px;"  class="form-control" id="sel1">
+    
+  </ol>
+</div>
+
+</body>
+</html>

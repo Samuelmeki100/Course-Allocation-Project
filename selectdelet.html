@@ -1,0 +1,117 @@
+<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+<div class="form-group">
+  <label for="sel1">Select list:</label>
+  <ol style="padding-left: 49px;" onclick='onselect(sel1)' class="form-control" id="sel1">
+    
+  </ol>
+</div>
+
+
+
+<span id="demo"> </span>
+<script>
+
+var Subjects ;
+var	text = "";
+var fLen ;
+var keepsubjects =" ";
+var counter=1;
+var subjectsCounter= 0; 
+
+
+$.get("getsubjects.php", function(data, status){
+		 Subjects=data.toString()
+    
+	  Subjects = Subjects.split(",");
+	  Subjects.pop();
+		fLen = Subjects.length;
+		
+		
+		getsub();
+					function getsub(){
+				
+							for (i = 0; i < fLen; i++) {
+							
+							text += "<li  id='sub"+ i +"' onclick='Onremove("+ i +")' > " + Subjects[i] + "</li>";
+
+						} 
+						text += "";
+
+						document.getElementById("sel1").innerHTML = text;
+
+
+			}
+
+    });
+	 
+
+function Onremove(index){
+
+		subjectsCounter = subjectsCounter + 1;
+
+			counter = index;
+			counter= Number(counter);
+			checkarray(index);
+
+}
+
+/*check array  if user pass alread selected the option*/
+function checkarray(check){
+	
+  keepsubjects = keepsubjects.split(",")
+		var yes= "0";
+		
+	for (i = 0; i < subjectsCounter; i++) {
+							
+		 if( keepsubjects[i] == Subjects[check] ){
+			
+			yes= "1" ;	 break;			 
+		 }
+		 
+		 
+
+	} 
+
+	keepsubjects.toString()
+	if(yes == "0"){
+	
+	
+	
+	setop(check);
+	}
+
+
+	return yes;
+}
+
+function setop(number){
+
+
+		if(subjectsCounter == 1){
+				
+						keepsubjects = keepsubjects +" "+ Subjects[number];
+						alert(keepsubjects + " " + subjectsCounter);
+						document.getElementById("sub"+number).style.color = "blue";
+			
+		}else if( subjectsCounter < 7 ){
+
+		keepsubjects = keepsubjects +","+ Subjects[number];
+			
+		 document.getElementById("sub"+number).style.color = "blue";
+		 alert(keepsubjects + " " + subjectsCounter);
+			
+		/*	}else if(checkarray(counter) == "1"){
+			
+				document.getElementById("sub"+number).style.color = "none";
+				subjectsCounter = subjectsCounter - 1;
+			}	*/	
+	 
+	 
+		} else {alert("limit Riched" + keepsubjects);}
+
+
+}
+
+</script>

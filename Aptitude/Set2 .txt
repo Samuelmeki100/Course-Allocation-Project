@@ -1,0 +1,47 @@
+<div id="Questions">
+<ul>
+<LI><label>if X/7=8 the X=<LI></label>
+<div class="radio">
+<label><input type="radio" name="optradio"></label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="optradio"></label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="optradio"></label>
+</div>
+
+<div class="radio">
+<label><input type="radio" name="optradio"></label>
+</div>
+</ul>
+</div>
+
+if x/7 then x=?
+
+why do cruise ships float
+
+she filed a grievance over the way the issue was handled
+
+which of the following is one of the cycles of a 4 stroke
+
+complementary angles form a angle that measures _______degrees
+
+a fuel thank at the rale of a gallon per minite it is suppling a engile that uses 3 gallons.How many gallons of fuel will be in the tank aftyer 1/2 hours , assuming that it was empty.
+
+A square pyramid had base of 3 inches on one side and height of 4 inches incles of the volume of the pyramid
+
+
+The meeting minute reviced that employees at the hope that his orher benifits will increase thanks  to  a change in medical coverage
+
+the square root of 150 is
+
+A wrench is used to turn a bolt that has 20 treads per inch after is complete of the wrench,the bolt  have moved
+
+Gear x which is  60 teeth,meshes with gear Y which has 12 teeth, each time gear X makes one complete rotation has many rotation does gear Y make?
+
+simple 6a-3a-base
+
+     
